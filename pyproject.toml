@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "git_annex_helper"
+version = "0.1.0"
+description = ""
+authors = ["Chen Yang <yangchen@thinkmore.info>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = "^0.4.0"
+loguru = "^0.5.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+ga = 'git_annex_helper:cmd_ga'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
